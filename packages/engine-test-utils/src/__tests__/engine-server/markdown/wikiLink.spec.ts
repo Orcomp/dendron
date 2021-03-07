@@ -355,7 +355,7 @@ describe("wikiLinks", () => {
         },
         [DendronASTDest.MD_ENHANCED_PREVIEW]: async ({ extra }) => {
           const { resp } = extra;
-          await checkVFile(resp, "[foo](../vault2/foo.md)");
+          await checkVFile(resp, "[foo](..\\vault2\\foo.md)");
         },
       },
       preSetupHook: async ({ wsRoot, vaults }) => {
