@@ -36,6 +36,8 @@ import frontmatterPlugin from "remark-frontmatter";
 import math from "remark-math";
 import remarkParse from "remark-parse";
 import remark2rehype from "remark-rehype";
+// @ts-ignore
+import sectionize from "remark-sectionize";
 import remarkStringify from "remark-stringify";
 // @ts-ignore
 import variables from "remark-variables";
@@ -460,6 +462,9 @@ export class MDUtilsV4 {
     proc = proc.use(publishSite, { noteIndex });
     if (config.site.useContainers) {
       proc = proc.use(containers);
+    }
+    if (config.site.useSectionize) {
+      proc = proc.use(sectionize);
     }
     return MDUtilsV4.procRehype({ proc, mathjax: true });
   }

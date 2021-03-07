@@ -79,6 +79,7 @@
     "remark-math": "3",
     "remark-parse": "^8.0.3",
     "remark-rehype": "^8.0.0",
+    "remark-sectionize": "^1.1.1",
     "remark-stringify": "^9.0.1",
     "remark-toc": "^7.0.0",
     "remark-variables": "^1.4.9",

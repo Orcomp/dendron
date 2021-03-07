@@ -244,6 +244,11 @@ export type DendronSiteConfig = {
    * Use {@link https://github.com/Nevenall/remark-containers} in published site
    */
   useContainers?: boolean;
+
+  /**
+   * Use {@link https://github.com/jake-low/remark-sectionize} in published site
+   */
+  useSectionize?: boolean;
 };
 
 export enum DuplicateNoteAction {
